@@ -1,0 +1,109 @@
+/* Reset beberapa style default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mengatur background dan font */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Ubah sesuai dengan background yang kamu inginkan */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+header img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Style for content sections */
+main {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+/* Styling password input and button */
+.password-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.password-container img {
+    max-width: 80px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.password-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.password-container input {
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.password-container button {
+    background-color: #333;
+    color: white;
+    padding: 20px 40px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.password-container button:hover {
+    background-color: #555;
+}
+
+/* Styling for the "hidden" class */
+.hidden {
+    display: none;
+}
+
+/* Styling for images */
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Closing image styling */
+.closing-img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
