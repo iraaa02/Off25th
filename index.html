@@ -26,42 +26,42 @@
         }
         /* Aturan lainnya */
     #meeting-page p {
-        font-family: 'Bahnschrift Light', cursive;
+        font-family: 'Cascadia Code ExtraLight', cursive;
         font-size: 1.2em;
         line-height: 1.5;
         color: #fff;
     }
     /* Aturan lainnya */
     #memories-page p {
-        font-family: 'Bahnschrift Light', cursive;
+        font-family: 'Cascadia Code ExtraLight', cursive;
         font-size: 1.2em;
         line-height: 1.5;
         color: #fff;
     }
     /* Aturan lainnya */
     #password-page p {
-        font-family: 'Bahnschrift Light', cursive;
+        font-family: 'Cascadia Code ExtraLight', cursive;
         font-size: 1.2em;
         line-height: 1.5;
         color: #fff;
     }
     /* Aturan lainnya */
     #prayers-page p {
-        font-family: 'Bahnschrift Light', cursive;
+        font-family: 'Cascadia Code ExtraLight', cursive;
         font-size: 1.2em;
         line-height: 1.5;
         color: #fff;
     }
     /* Aturan lainnya */
     #spotify-page p {
-        font-family: 'Bahnschrift Light', cursive;
+        font-family: 'Cascadia Code ExtraLight', cursive;
         font-size: 1.2em;
         line-height: 1.5;
         color: #fff;
     }
     /* Aturan lainnya */
     #closing-page p {
-        font-family: 'Bahnschrift Light', cursive;
+        font-family: 'Cascadia Code ExtraLight', cursive;
         font-size: 1.2em;
         line-height: 1.5;
         color: #fff;
@@ -189,6 +189,97 @@
             border-radius: 10px;
             margin-top: 10px;
         }
+
+        /* Aturan untuk perangkat dengan lebar layar maksimum 768px (umumnya tablet dan ponsel) */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px; /* Mengurangi padding untuk tampilan di perangkat kecil */
+            }
+
+            header h1 {
+                font-size: 2em; /* Mengurangi ukuran font untuk judul */
+            }
+
+            header img {
+                max-width: 80%; /* Menyesuaikan ukuran gambar header */
+            }
+
+            .content {
+                padding: 10px; /* Memberikan sedikit ruang pada konten */
+            }
+
+            .password-container {
+                flex-direction: column; /* Mengubah tata letak kolom */
+                align-items: stretch; /* Menyusun elemen menjadi satu kolom */
+            }
+
+            .password-container input {
+                width: 100%; /* Membuat input menyesuaikan lebar layar */
+                margin-right: 0; /* Menghilangkan margin kanan pada input */
+            }
+
+            .password-container button {
+                width: 100%; /* Membuat tombol menyesuaikan lebar layar */
+                margin-top: 10px; /* Menambah jarak antara input dan tombol */
+            }
+
+            .meeting-images {
+                flex-direction: column; /* Menyusun gambar secara vertikal */
+                align-items: center; /* Memusatkan gambar */
+            }
+
+            .meeting-image {
+                width: 100%; /* Menyesuaikan lebar gambar */
+                height: auto; /* Menjaga aspek rasio gambar */
+            }
+
+            .image-left img {
+                width: 100px; /* Mengurangi ukuran gambar */
+                height: auto; /* Menjaga aspek rasio gambar */
+            }
+
+            .closing-img {
+                width: 70%; /* Menyesuaikan ukuran gambar penutupan */
+            }
+
+            iframe {
+                width: 100%; /* Menyesuaikan lebar iframe */
+            }
+        }
+
+        /* Aturan untuk perangkat dengan lebar layar lebih dari 768px (desktop atau tablet besar) */
+        @media (min-width: 769px) {
+            /* Menjaga tampilan agar tetap sesuai pada desktop */
+            header img {
+                max-width: 40%; /* Ukuran gambar header yang lebih kecil di desktop */
+            }
+
+            .password-container {
+                flex-direction: row; /* Mengembalikan tata letak menjadi baris */
+                align-items: center; /* Menyusun elemen secara horizontal */
+            }
+
+            .password-container input {
+                width: auto; /* Menjaga ukuran input seperti semula */
+            }
+
+            .password-container button {
+                width: auto; /* Menjaga ukuran tombol seperti semula */
+            }
+
+            .meeting-images {
+                flex-direction: row; /* Menyusun gambar secara horizontal */
+            }
+
+            .meeting-image {
+                width: 180px; /* Menyusun gambar pada ukuran yang lebih besar */
+            }
+
+            .closing-img {
+                width: 50%; /* Mengurangi ukuran gambar penutupan di desktop */
+            }
+        }
+
     </style>
 </head>
 <body>
